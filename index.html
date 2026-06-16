@@ -930,7 +930,7 @@ footer {
     </div>
 
     <!-- PACK -->
-    <div style="background:var(--ardoise); padding:3.5rem; display:grid; grid-template-columns:1fr auto; gap:3rem; align-items:center;">
+    <div style="background:var(--ardoise); padding:2rem 1.5rem; display:flex; flex-direction:column; gap:2rem; align-items:flex-start;">
       <div>
         <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.2em; color:var(--ardoise-pale); margin-bottom:1rem;">Offre complète</div>
         <h3 style="font-family:Cormorant Garamond,serif; font-size:2rem; color:var(--lin); margin-bottom:0.8rem; font-weight:300;">Pack Complet — 11 guides</h3>
@@ -955,16 +955,16 @@ footer {
         <h2 style="font-size:2.4rem; color:var(--brun); font-weight:300;">Ce que disent<br><em style="font-style:italic; color:var(--ardoise);">les familles</em></h2>
       </div>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--gris-lin);">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:2px; background:var(--gris-lin);">
       <div style="background:var(--blanc); padding:2.8rem 2.5rem; min-height:280px;">
         <p style="font-family:Cormorant Garamond,serif; font-size:1.15rem; font-style:italic; color:var(--ardoise); line-height:1.7; margin-bottom:1.5rem;">Votre témoignage pourrait figurer ici.</p>
-        <p style="font-size:0.8rem; color:var(--brun-doux); line-height:1.6; margin-bottom:1.5rem;">Vous avez bénéficié d un accompagnement Cap Grand Age ? Partagez votre expérience.</p>
-        <p style="font-size:0.75rem; color:var(--brun-doux);">— A venir</p>
+        <p style="font-size:0.8rem; color:var(--brun-doux); line-height:1.6; margin-bottom:1.5rem;">Vous avez bénéficié d'un accompagnement Cap Grand Âge ? Partagez votre expérience.</p>
+        <p style="font-size:0.75rem; color:var(--brun-doux);">— À venir</p>
       </div>
       <div style="background:var(--blanc); padding:2.8rem 2.5rem; min-height:280px;">
         <p style="font-family:Cormorant Garamond,serif; font-size:1.15rem; font-style:italic; color:var(--ardoise); line-height:1.7; margin-bottom:1.5rem;">Votre témoignage pourrait figurer ici.</p>
-        <p style="font-size:0.8rem; color:var(--brun-doux); line-height:1.6; margin-bottom:1.5rem;">Chaque parcours est unique. Le votre peut aider dautres familles a franchir le pas.</p>
-        <p style="font-size:0.75rem; color:var(--brun-doux);">— A venir</p>
+        <p style="font-size:0.8rem; color:var(--brun-doux); line-height:1.6; margin-bottom:1.5rem;">Chaque parcours est unique. Le votre peut aider d'autres familles à franchir le pas.</p>
+        <p style="font-size:0.75rem; color:var(--brun-doux);">— À venir</p>
       </div>
       <div style="background:var(--ardoise); padding:2.8rem 2.5rem; min-height:280px; display:flex; flex-direction:column; justify-content:center;">
         <p style="font-family:Cormorant Garamond,serif; font-size:1.3rem; font-style:italic; color:rgba(245,240,232,0.7); line-height:1.6; margin-bottom:2rem;">Vous avez travaille avec Sarah ? Votre retour compte.</p>
@@ -984,15 +984,21 @@ footer {
     <a href="#" class="blog-link">Voir tous les articles →</a>
   </div>
   <div class="blog-grid">
-    <div class="blog-card blog-placeholder">
-      <p>Vos premiers articles<br>arrivent bientôt</p>
-    </div>
-    <div class="blog-card blog-placeholder">
-      <p>Collection<br>"Culture du Soin"</p>
-    </div>
-    <div class="blog-card blog-placeholder">
-      <p>Guides pratiques<br>téléchargeables</p>
-    </div>
+    <div class="blog-card" style="cursor:pointer;" onclick="document.getElementById('article-1').style.display='block'; document.getElementById('article-1').scrollIntoView({behavior:'smooth'});">
+        <span class="blog-card-tag">Réflexion · Grand âge</span>
+        <h3>Les EHPAD ne sont pas parfaits. Mais la culpabilité n'a pas sa place.</h3>
+        <p>L'entrée en EHPAD n'est pas un abandon. C'est souvent une décision prise après des années de lutte et d'amour.</p>
+      </div>
+    <div class="blog-card" style="cursor:pointer;" onclick="document.getElementById('article-2').style.display='block'; document.getElementById('article-2').scrollIntoView({behavior:'smooth'});">
+        <span class="blog-card-tag">Réflexion · Grand âge</span>
+        <h3>La colère ne suffira pas.</h3>
+        <p>À force de chercher des monstres, on oublie parfois de regarder les êtres humains.</p>
+      </div>
+    <div class="blog-card" style="cursor:pointer;" onclick="document.getElementById('article-3').style.display='block'; document.getElementById('article-3').scrollIntoView({behavior:'smooth'});">
+        <span class="blog-card-tag">Philosophie · Grand âge</span>
+        <h3>La dignité : un mot qui me laisse de plus en plus perplexe.</h3>
+        <p>Ce n'est pas la dépendance qui me semble contraire à la dignité. C'est le regard qui réduit quelqu'un à sa dépendance.</p>
+      </div>
   </div>
 </section>
 
