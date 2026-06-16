@@ -586,6 +586,81 @@ footer {
   }
 }
 
+
+/* ── MOBILE COMPLET ── */
+@media (max-width: 768px) {
+
+  /* Navigation */
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+
+  /* Hero */
+  .hero { grid-template-columns: 1fr !important; }
+  .hero-left { padding: 5rem 1.5rem 3rem !important; }
+  .hero-right { min-height: 280px !important; }
+
+  /* Stats */
+  .stats-bar { grid-template-columns: 1fr !important; }
+  .stat-item { border-right: none !important; border-bottom: 1px solid rgba(245,240,232,0.06); }
+
+  /* Ce que vous vivez */
+  .section-vivez { grid-template-columns: 1fr !important; }
+  .vivez-gauche { padding: 3rem 1.5rem !important; }
+  .vivez-droite { padding: 3rem 1.5rem !important; }
+
+  /* Qui je suis */
+  .section-sarah { grid-template-columns: 1fr !important; padding: 4rem 1.5rem !important; gap: 2rem !important; }
+  .sarah-sticky { position: static !important; }
+
+  /* Accompagnement */
+  .section-accompagnement { padding: 4rem 1.5rem !important; }
+  .section-accompagnement-header { grid-template-columns: 1fr !important; }
+  .formules { grid-template-columns: 1fr !important; }
+  .guides-section { flex-direction: column !important; gap: 1.5rem !important; padding: 2rem 1.5rem !important; }
+
+  /* Approche */
+  .section-approche { grid-template-columns: 1fr !important; padding: 4rem 1.5rem !important; }
+
+  /* Guides collection */
+  #guides { padding: 4rem 1.5rem !important; }
+  #guides > div { max-width: 100% !important; }
+  #guides > div > div { 
+    display: flex !important; 
+    flex-direction: column !important; 
+    gap: 2px !important; 
+  }
+  #guides [style*="grid-template-columns"] {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  #guides [style*="grid-column"] {
+    grid-column: auto !important;
+  }
+
+  /* Blog */
+  .section-blog { padding: 4rem 1.5rem !important; }
+  .blog-header { flex-direction: column !important; gap: 1rem !important; align-items: flex-start !important; }
+  .blog-grid { grid-template-columns: 1fr !important; }
+
+  /* Contact */
+  .section-contact { grid-template-columns: 1fr !important; padding: 4rem 1.5rem !important; }
+  .btn-contact-primary { width: 100% !important; }
+  .btn-sms { width: 100% !important; }
+
+  /* Articles */
+  #article-1, #article-2 { padding: 3rem 1.5rem !important; }
+
+  /* Avis clients */
+  section[style*="padding:8rem 7rem"] { padding: 4rem 1.5rem !important; }
+  section[style*="grid-template-columns:repeat(3,1fr)"] { 
+    display: flex !important; 
+    flex-direction: column !important; 
+  }
+
+  /* Footer */
+  footer { flex-direction: column !important; gap: 1.5rem !important; padding: 2rem 1.5rem !important; text-align: center !important; }
+}
+
 </style>
 </head>
 <body>
@@ -967,6 +1042,64 @@ footer {
 
     <div style='margin-top:4rem; padding:2.5rem; background:var(--lin); border-left:3px solid var(--ardoise);'>
       <p style='font-size:0.85rem; color:var(--brun); line-height:1.8;'>Vous traversez l'entrée en EHPAD de votre parent ? <a href='#contact' onclick='document.getElementById("article-1").style.display="none";' style='color:var(--ardoise);'>Parlons-en.</a></p>
+    </div>
+  </div>
+</section>
+
+
+<section id='article-2' style='background:var(--blanc); padding:clamp(2rem, 7vw, 7rem); display:none;'>
+  <div style='max-width:720px; margin:0 auto;'>
+    <a href='#' onclick='document.getElementById("article-2").style.display="none"; window.scrollTo(0,0); return false;' style='font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--ardoise); text-decoration:none; display:inline-block; margin-bottom:3rem;'>← Retour</a>
+    <div class='section-tag'>Réflexion · Grand âge</div>
+    <h2 style='font-size:2.6rem; color:var(--brun); font-weight:300; margin-bottom:0.5rem;'>La colère ne <em style="font-style:italic; color:var(--ardoise);">suffira pas.</em></h2>
+    <p style='font-size:0.75rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--ardoise); margin-bottom:3rem; margin-top:1rem;'>Sarah Olborski · Cap Grand Âge</p>
+    <div style='font-size:1rem; color:var(--brun); line-height:2; display:flex; flex-direction:column; gap:1.2rem;'>
+      <p>Depuis plusieurs années, lorsqu'on parle d'EHPAD, un mot revient sans cesse : maltraitance.</p>
+      <p>Et il faut avoir l'honnêteté de reconnaître que certaines situations ont existé. Certaines existent encore. Des familles ont souffert. Des résidents ont souffert. Ces réalités ne doivent jamais être minimisées.</p>
+      <p>Mais à force de regarder les EHPAD uniquement à travers ce prisme, on finit par ne plus voir le reste.</p>
+      <p style='font-family:Cormorant Garamond,serif; font-size:1.3rem; font-style:italic; color:var(--ardoise); border-left:2px solid var(--ardoise); padding-left:1.5rem; line-height:1.6;'>L'aide-soignante qui reste quelques minutes de plus auprès d'un résident inquiet. L'infirmière qui rentre chez elle en repensant à une situation difficile. L'animateur qui cherche chaque jour à redonner un peu de vie dans des lieux où la maladie occupe beaucoup de place. Et les familles qui se sont battues pendant des années avant de prendre cette décision douloureuse.</p>
+      <p>À force de chercher des monstres, on oublie parfois de regarder les êtres humains.</p>
+      <p>Je ne souhaite pas défendre les EHPAD. Je ne souhaite pas non plus accuser les familles ou les professionnels. Je souhaite contribuer à recréer du dialogue là où il s'est perdu.</p>
+      <p>Les familles souffrent. Les professionnels souffrent. Et les personnes âgées subissent souvent les conséquences de cette incompréhension mutuelle.</p>
+      <p>La solution est précisément là — dans la compréhension de ce que vivent les uns et les autres. Et surtout dans la compréhension de ce que vivent les personnes âgées elles-mêmes.</p>
+      <p style='font-family:Cormorant Garamond,serif; font-size:1.4rem; font-style:italic; color:var(--brun); font-weight:400;'>Parce qu'au bout du compte, ce ne sont ni les établissements ni les familles qui devraient être au centre du débat. Ce sont elles.</p>
+      <p>Et elles méritent mieux que des camps opposés.</p>
+      <p>Le grand âge n'est pas seulement une question de soins. C'est une question de société. C'est peut-être même l'un des sujets qui révèle le mieux nos contradictions, nos peurs et notre difficulté à regarder certaines réalités en face.</p>
+    </div>
+    <div style='margin-top:4rem; padding:2.5rem; background:var(--lin); border-left:3px solid var(--ardoise);'>
+      <p style='font-size:0.85rem; color:var(--brun); line-height:1.8;'>Vous traversez l'entrée en EHPAD de votre parent ? <a href='#contact' onclick='document.getElementById("article-2").style.display="none";' style='color:var(--ardoise);'>Parlons-en.</a></p>
+    </div>
+  </div>
+</section>
+
+
+<section id='article-3' style='background:var(--blanc); padding:clamp(2rem, 7vw, 7rem); display:none;'>
+  <div style='max-width:720px; margin:0 auto;'>
+    <a href='#' onclick='document.getElementById("article-3").style.display="none"; window.scrollTo(0,0); return false;' style='font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--ardoise); text-decoration:none; display:inline-block; margin-bottom:3rem;'>← Retour</a>
+    <div class='section-tag'>Philosophie · Grand âge</div>
+    <h2 style='font-size:2.6rem; color:var(--brun); font-weight:300; margin-bottom:0.5rem;'>La dignité : un mot qui me laisse de plus en plus <em style="font-style:italic; color:var(--ardoise);">perplexe.</em></h2>
+    <p style='font-size:0.75rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--ardoise); margin-bottom:3rem; margin-top:1rem;'>Sarah Olborski · Cap Grand Âge</p>
+    <div style='font-size:1rem; color:var(--brun); line-height:2; display:flex; flex-direction:column; gap:1.2rem;'>
+      <p style='font-family:Cormorant Garamond,serif; font-size:1.3rem; font-style:italic; color:var(--ardoise); border-left:2px solid var(--ardoise); padding-left:1.5rem; line-height:1.6;'>« Je veux mourir dans la dignité. »</p>
+      <p>Cette phrase est devenue presque banale. On l'entend dans les médias, dans les familles, dans les couloirs des établissements, autour d'une table entre amis.</p>
+      <p>Et pourtant, plus je l'entends, moins je suis certaine de savoir ce qu'elle signifie.</p>
+      <p>La douleur ? La dépendance ? La perte de mémoire ? Le fait de ne plus pouvoir se laver seul ? De ne plus reconnaître ses enfants ? Ou simplement la peur de devenir celui que l'on n'aurait jamais voulu être ?</p>
+      <p>Le mot lui-même est passionnant. Le latin <em>dignitas</em>, issu de <em>dignus</em>, renvoie à ce qui mérite d'être reçu avec égard, à ce qui mérite le respect. Pendant longtemps, cette dignité était liée au mérite, au statut, à la réputation. Puis notre conception a profondément changé.</p>
+      <p>Aujourd'hui, nous affirmons qu'un être humain possède une dignité inconditionnelle. Non pas parce qu'il a réussi sa vie, mais simplement parce qu'il est humain.</p>
+      <p>Et c'est là que les choses deviennent intéressantes.</p>
+      <p>Car si cette dignité est réellement inconditionnelle, alors elle ne devrait pas disparaître avec une maladie, une démence ou une perte d'autonomie. Pourtant, dans notre imaginaire collectif, elle semble parfois vaciller dès qu'un corps devient fragile.</p>
+      <p>Je me demande même si nous ne parlons pas souvent de notre propre peur plutôt que de celle des personnes âgées. Nous avons peur d'avoir mal. Peur de dépendre. Peur de perdre le contrôle. Peur de ne plus être reconnus. Alors nous projetons ces angoisses sur ceux qui vivent déjà cette réalité.</p>
+      <p>Mais vivent-ils toujours cette situation comme nous l'imaginons ?</p>
+      <p>Une personne qui a besoin d'aide pour manger est-elle moins digne ? Une personne qui ne parle plus est-elle moins digne ? Une personne qui porte une protection est-elle moins digne ?</p>
+      <p>Je ne crois pas.</p>
+      <p>En revanche, je pense qu'une douleur non soulagée, une humiliation ou une indifférence peuvent profondément blesser une personne. Ce n'est pas la dépendance qui me semble contraire à la dignité. C'est le regard qui réduit quelqu'un à sa dépendance.</p>
+      <p style='font-family:Cormorant Garamond,serif; font-size:1.3rem; font-style:italic; color:var(--ardoise); border-left:2px solid var(--ardoise); padding-left:1.5rem; line-height:1.6;'>Peut-être avons-nous fini par confondre dignité et autonomie. Comme si la valeur d'un être humain diminuait au rythme où il perd ses capacités.</p>
+      <p>La dignité appartient-elle à la personne… ou au regard que nous choisissons de poser sur elle ?</p>
+      <p>La dignité n'est peut-être pas un état que l'on conserve ou que l'on perd. C'est peut-être une décision collective. La décision de continuer à voir un être humain là où la maladie brouille les repères, là où le corps change, là où la parole disparaît.</p>
+      <p style='font-family:Cormorant Garamond,serif; font-size:1.4rem; font-style:italic; color:var(--brun); font-weight:400;'>Finalement, lorsque nous parlons de « mourir dans la dignité », parlons-nous vraiment de la personne qui meurt ? Ou parlons-nous de notre propre difficulté à accepter la vulnérabilité humaine ?</p>
+    </div>
+    <div style='margin-top:4rem; padding:2.5rem; background:var(--lin); border-left:3px solid var(--ardoise);'>
+      <p style='font-size:0.85rem; color:var(--brun); line-height:1.8;'>Ces questions vous touchent ? <a href='#contact' onclick='document.getElementById("article-3").style.display="none";' style='color:var(--ardoise);'>Échangeons.</a></p>
     </div>
   </div>
 </section>
